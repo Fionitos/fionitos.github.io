@@ -1,0 +1,48 @@
+{
+    "subjects": [{
+        "subject_number": 1,
+        "subject": "-",
+        "subject_rooms": "-"
+      },
+      {
+        "subject_number": 2,
+        "subject": "-",
+        "subject_room": "-"
+      },
+      {
+        "subject_number": 3,
+        "subject": "-",
+        "subject_room": "-"
+      },
+      {
+        "subject_number": 4,
+        "subject": "-",
+        "subject_room": "-"
+      },
+      {
+        "subject_number": 5,
+        "subject": "-",
+        "subject_room": "-"
+      },
+      {
+        "subject_number": 6,
+        "subject": "-",
+        "subject_room": "-"
+      },
+      {
+        "subject_number": 7,
+        "subject": "-",
+        "subject_room": "-"
+      },
+      {
+        "subject_number": 8,
+        "subject": "-",
+        "subject_room": "-"
+      },
+      {
+        "subject_number": 9,
+        "subject": "-",
+        "subject_room": "-"
+      }
+    ]
+  }

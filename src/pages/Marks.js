@@ -34,7 +34,6 @@ function Marks() {
             </div>
             <div className="Info">
                 <div className="Person">{student[student_name].student_name} </div>
-                <div>ㅤ</div>
                 <Tippy className="Tippy" content={<div className="Description">{students.subject_marks[0].subject_description}</div>}>
                     <div className="Subject">{students.subject_marks[0].subject} </div>
                 </Tippy>

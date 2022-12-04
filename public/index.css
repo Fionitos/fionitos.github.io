@@ -46,20 +46,10 @@ body {
 	padding-left: 10px;
 	height: 50px;
 }
-.marks{
-	height: 50px;
-	padding-left: 17px;
-	padding-top: 50px;
-}
 .circleLeft{
 	top: 10%;
 }
-.attendance{
-	height: 50px;
-	padding-left: 17px;
-	padding-top: 50px;
-}
-.debts{
+.attendance, .debts, .marks{
 	height: 50px;
 	padding-left: 17px;
 	padding-top: 50px;
@@ -95,27 +85,13 @@ ul{
 	backdrop-filter: blur(10px);
 	color: white;
 }
-.Table_In{
+.Table_In, .List{
 	border: 5px;
 	border-radius: 5px;
 	text-align: center;
 	padding: 5px;
 	width: 150px;
 	margin-top: 5px;
-/*	margin-left: 10px;*/
-	color: #231f24;
-	text-align: center;
-	background: rgba(129, 92, 177, 0.2);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-}
-.List{
-	width: 150px;
-	border: 5px;
-	border-radius:5px ;
-	text-align: center;
-	padding: 5px;
-	margin-top: 5px ;
 	color: #231f24;
 	text-align: center;
 	background: rgba(129, 92, 177, 0.2);
@@ -128,23 +104,7 @@ ul{
 	padding-right: 10px;
 	padding-top: 10px;
 }
-.Tuesday{
-	padding: 10px;
-	float: left;
-}
-.Wednesday{
-	padding: 10px;
-	float: left;
-}
-.Thursday{
-	padding: 10px;
-	float: left;
-}
-.Friday{
-	padding: 10px;
-	float: left;
-}
-.Saturday{
+.Tuesday, .Wednesday, .Thursday, .Friday, .Saturday{
 	padding: 10px;
 	float: left;
 }
@@ -238,16 +198,8 @@ ul{
 	background-color: rgba(22, 22, 22, 0.9);
 	transition: all 290ms ease-out;
 }
-.Home{
+.Home, .Marks, .Info{
 	position: relative;
-	z-index: 1;
-}
-.Marks {
-	position: absolute;
-	z-index: 1;
-}
-.Marks {
-	position: absolute;
 	z-index: 1;
 }
 .Mark_Theme {
@@ -269,13 +221,6 @@ ul{
 	right: -50px;
 	bottom: 35px;
 }
-.Info {
-	position: relative;
-	z-index: 1;
-}
-.Description{
-	position: relative;
-}
 .buttonChange_Mark{
 	padding-top: 125px;
 	padding-left: 82%;
@@ -287,4 +232,5 @@ ul{
 }
 .Subject {
 	width: 85px;
+	margin-top: 20px;
 }

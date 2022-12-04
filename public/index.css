@@ -198,39 +198,50 @@ ul{
 	background-color: rgba(22, 22, 22, 0.9);
 	transition: all 290ms ease-out;
 }
-.Home, .Marks, .Info{
+.Marks, .Info, .MarkInfo, .Day, .Mark_Theme{
+	position: relative;
+	z-index: 1;
+}
+.Home {
 	position: relative;
 	z-index: 1;
 }
 .Mark_Theme {
-	position: relative;
-	z-index: 2;
 	float: right;
 	top: 20px;
 	right: -20px;
 }
 .Day {
-	position: relative;
-	z-index: 2;
 	float: right;
 }
 .MarkInfo {
-	position: relative;
-	z-index: 1;
-	float: right;
-	right: -50px;
-	bottom: 35px;
+	float: left;
+	right: -100px;
+	bottom: 36px;
 }
 .buttonChange_Mark{
 	padding-top: 125px;
 	padding-left: 82%;
-	top: -200px;
-	left: 120px;
-	position: relative;
+	top: -10px;
+	left: -60%;
+	position: fixed;
 	width: 150px;
-	float: left;
 }
 .Subject {
+	position: relative;
 	width: 85px;
 	margin-top: 20px;
+}
+.Mark_teacher{
+	position: relative;
+	z-index: 1;
+}
+.MarkInfo1 {
+	position: relative;
+	float: left;
+	right: -250px;
+	bottom: 90px;
+}
+.Students {
+	margin-bottom: 5px;
 }

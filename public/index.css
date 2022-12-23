@@ -6,307 +6,10 @@ body {
 	margin: 0;
 	background-size: 200% 200%;
 }
-.blure {
-	justify-content: space-between;
-	position: fixed;
-	/* background: rgba(188, 141, 255, 0.2); */
-	background: rgba(190, 190, 190, 0.2);
-	display: flex;
-    border-radius: 15px;
-    outline-color: white;
-    outline-style: solid;
-    outline-width: 0.5px;
-	width: 85%;
-	height: 85%;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
-	top: 10%;
-	left: 13%;
-}
-.icons{
-	justify-items: center;
-	display: block;
-	height: 93.8%;
-	width: 10%;
-	padding-top: 3%;
-}
-.timetable{
-	padding-top: 20px;
-	padding-left: 10px;
-	height: 50px;
-}
-.circleLeft{
-	top: 10%;
-}
-.attendance, .debts, .marks{
-	height: 50px;
-	padding-left: 17px;
-	padding-top: 50px;
-}
-.groups{
-	height: 50px;
-	padding-left: 10px;
-	padding-top: 50px;
-}
-ul{
-	position: relative;
-	top: -5px;
-	list-style-type: none;
-}
-.predmets{
-	display: flex;
-	margin-top: 5%;
-	position: fixed;
-	padding-top: 125px;
-	padding-left: 250px;
-	justify-content: space-between;
-	margin-right: 7%;
-}
-.№{
-	border: 5px;
-	border-radius: 5px;
-	background: white;
-	margin-top: 3.8px;
-	padding: 5.5px;
-	text-align: center;
-	background: rgba(129, 92, 177, 0.2);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	color: white;
-}
-.Table_In, .List{
-	border: 5px;
-	border-radius: 5px;
-	text-align: center;
-	padding: 5px;
-	width: 150px;
-	margin-top: 5px;
-	color: #231f24;
-	text-align: center;
-	background: rgba(129, 92, 177, 0.2);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-}
-.Monday{
-	float: left;
-	padding-left: 20px;
-	padding-right: 10px;
-	padding-top: 10px;
-}
-.Tuesday, .Wednesday, .Thursday, .Friday, .Saturday{
-	padding: 10px;
-	float: left;
-}
-.buttonChange{
-	padding-top: 125px;
-	padding-left: 82%;
-	top: -10px;
-	left: -0.3%;
-	position: fixed;
-	width: 150px;
-}
-.nav {
-	background-color: #fff;
-	box-shadow: 0 5px 10px rgba(22, 22, 22, 0.2);
-	height: 10px;
-	width: 14px;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 30px;
-	font-size: 20px;
-}
-.nav__toggler {
-	z-index: 10;
-	display: block;
-	position: relative;
-	float: right;
-	top: -70px;
-	right: -81%;
-	background-color: #fff;
-	border: #fff;
-	height: 19px;
-	width: 17px;
-	padding: 3px;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: color 100ms ease-out;
-}
-.nav__toggler:hover {
-	color: coral;
-}
-.swipe-menu {
-	/* background-color: #bd4acf70; */
-	background: linear-gradient(90deg, #9E768F, #9FA4C4);
-	animation: gradient 10s ease infinite;
-	box-shadow: 8px 5px 7px rgba(22, 22, 22, 0.8);
-	position: absolute;
-	z-index: 10;
-	bottom: 0;
-	left: 0;
-	top: 0;
-	width: 300px;
-	max-width: 100%;
-	transition: all 190ms ease-out;
-	opacity: 0;
-	left: -320px;
-	visibility: hidden;
-}
-.swipe-menu ~ .swipe-menu-overlay {
-	width: 0;
-}
-.swipe-menu--show {
-	visibility: visible;
-	opacity: 1;
-	left: 0;
-}
-.swipe-menu--show ~ .swipe-menu-overlay {
-	width: 100%;
-}
-.swipe-menu__close {
-	position: absolute;
-	right: 30px;
-	top: 30px;
-	background-color: transparent;
-	border: none;
-	padding: 0;
-	font-size: 24px;
-	opacity: 0.3;
-	cursor: pointer;
-	transition: opacity 100ms ease-out;
-}
-.swipe-menu__close:hover {
-	opacity: 0.7;
-}
-.swipe-menu-overlay {
-	position: absolute;
-	z-index: 9;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(22, 22, 22, 0.9);
-	transition: all 290ms ease-out;
-}
-.Marks, .Info, .MarkInfo, .Day, .Mark_Theme{
-	position: relative;
-	z-index: 1;
-}
-.Home {
-	position: relative;
-	z-index: 1;
-}
-.Mark_Theme {
-	float: right;
-	top: 20px;
-	right: -20px;
-}
-.Day {
-	float: right;
-}
-.MarkInfo {
-	float: left;
-	right: -100px;
-	bottom: 36px;
-}
-.buttonChange_Mark{
-	padding-top: 125px;
-	padding-left: 82%;
-	top: -10px;
-	left: -60%;
-	position: fixed;
-	width: 150px;
-}
-.Subject {
-	position: relative;
-	width: 85px;
-	margin-top: 20px;
-}
-.Mark_teacher{
-	position: relative;
-	z-index: 1;
-}
-.MarkInfo1 {
-	position: relative;
-	float: left;
-	right: -250px;
-	bottom: 90px;
-}
-.Students {
-	margin-bottom: 5px;
-}
 .sun {
     position: fixed;
     right: 0px;
     top: 0%;
-}
-.vxod {
-    position: absolute;
-    width: 572px;
-    height: 650px;
-    left: 1296px;
-    top: 215px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-}
-.login {
-    position: absolute;
-    width: 527px;
-    height: 70px;
-    left: 1319px;
-    top: 361px;
-
-    background: #ECF9FF;
-    border-radius: 20px;
-}
-.Timetable {
-    position: absolute;
-    padding-top: 10px;
-    text-align: center;
-    font-size: x-large;
-    color: #fff;
-    width: 245px;
-    height: 45px;
-    left: 1450px;
-    top: 697px;
-
-    background: #80CFF8;
-    border-radius: 20px;
-}
-.enter {
-    position: absolute;
-    padding-top: 10px;
-    text-align: center;
-    font-size: x-large;
-    color: #fff;
-    width: 245px;
-    height: 45px;
-    left: 1450px;
-    top: 616.95px;
-
-    background: #80CFF8;
-    border-radius: 20px;
-}
-.password {
-    position: absolute;
-    width: 527px;
-    height: 70px;
-    left: 1319px;
-    top: 488.98px;
-
-    background: #ECF9FF;
-    border-radius: 20px;
-}
-.black {
-    position: absolute;
-    width: 130px;
-    height: 29px;
-    left: 1517px;
-    top: 274px;
-
-    background: #000000;
 }
 .phone1 {
     position: absolute;
@@ -328,4 +31,355 @@ ul{
     height: 22.34px;
     left: 528.93px;
     top: 873px;
+}
+.vxod {
+    position: absolute;
+    width: 572px;
+    height: 503px;
+    left: 1283px;
+    top: 288px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+#vxod {
+    position: absolute;
+    width: 76px;
+    height: 26px;
+    left: 42%;
+    top: 20%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+
+    text-align: center;
+
+    color: #000000;
+}
+.blue {
+    position: absolute;
+    width: 76px;
+    height: 2px;
+    left: 42%;
+    top: 26%;
+
+    background: #40BDFF;
+}
+.login {
+    position: absolute;
+    width: 527px;
+    height: 70px;
+    left: 4%;
+    top: 33%;
+
+    background: #ECF9FF;
+    border-radius: 20px;
+}
+.password {
+    position: absolute;
+    width: 527px;
+    height: 70px;
+    left: 4%;
+    top: 50%;
+
+    background: #ECF9FF;
+    border-radius: 20px;
+}
+#login, #password {
+    position: absolute;
+    width: 48px;
+    height: 20px;
+    left: 5%;
+    top: 10%;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: rgba(64, 58, 75, 0.6);
+}
+.checkmark {
+    position: absolute;
+    width: 14.55px;
+    height: 14.55px;
+    border-radius: 50px;
+    left: 7%;
+    top: 66.5%;
+
+    background: #40BDFF;
+}
+#remember {
+    position: absolute;
+    width: 161.7px;
+    height: 21.83px;
+    left: 10%;
+    top: 66%;
+
+    font-family: 'Iceberg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.1702px;
+    line-height: 20px;
+    text-align: center;
+
+    color: rgba(64, 58, 75, 0.6);
+}
+.enter {
+    position: absolute;
+    width: 205px;
+    height: 40px;
+    left: 4%;
+    top: 80%;
+
+    background: #40BDFF;
+    border-radius: 15px;
+}
+#enter {
+    position: absolute;
+    width: 72px;
+    height: 24px;
+    left: 30%;
+    top: 19%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.Timetable {
+    position: absolute;
+    width: 307px;
+    height: 40px;
+    left: 43%;
+    top: 80%;
+
+    background: #40BDFF;
+    border-radius: 15px;
+}
+#Timetable {
+    position: absolute;
+    width: 143px;
+    height: 24px;
+    left: 25%;
+    top: 17%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#circle {
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    left: 43px;
+    top: 18px;
+}
+.Days {
+    position: absolute;
+    width: 61px;
+    height: 473px;
+    left: 43px;
+    top: 100px;
+
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.Group {
+    position: absolute;
+    width: 61px;
+    height: 33px;
+    left: 43px;
+    top: 592px;
+
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.GroupText {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 442px;
+    height: 43px;
+    left: 25px;
+    top: 20px;
+
+    background: #FFFFFF;
+    border: 1.18426px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.04);
+    border-radius: 11px;
+}
+.SelectGroupText {
+    position: absolute;
+    width: 224px;
+    height: 26px;
+    left: 25%;
+    top: 10%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 100%;
+
+    text-align: center;
+
+    color: #005079;
+}
+.FirstCourse {
+    box-sizing: border-box;
+
+    position: absolute;
+    z-index: 1;
+    width: 442px;
+    height: 150px;
+    left: 25px;
+    top: 10%;
+
+    background: #FFFFFF;
+    border: 1.18426px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.05);
+    border-radius: 22.7817px;
+}
+.SecondCourse {
+    box-sizing: border-box;
+
+    position: absolute;
+    z-index: 1;
+    width: 442px;
+    height: 150px;
+    left: 25px;
+    top: 30%;
+
+    background: #FFFFFF;
+    border: 1.18426px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.05);
+    border-radius: 22.7817px;
+}
+.ThirdCourse {
+    box-sizing: border-box;
+
+    position: absolute;
+    z-index: 1;
+    width: 442px;
+    height: 150px;
+    left: 25px;
+    top: 50%;
+
+    background: #FFFFFF;
+    border: 1.18426px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.05);
+    border-radius: 22.7817px;
+}
+.FourthCourse {
+    box-sizing: border-box;
+
+    position: absolute;
+    z-index: 1;
+    width: 442px;
+    height: 150px;
+    left: 25px;
+    top: 70%;
+
+    background: #FFFFFF;
+    border: 1.18426px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.05);
+    border-radius: 22.7817px;
+}
+.FirstCourseText, .SecondCourseText, .ThirdCourseText, .FourthCourseText {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 166px;
+    height: 28px;
+    left: 30%;
+    top: 10%;
+
+    background: #FFFFFF;
+    border: 1.18426px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.04);
+    border-radius: 11px;
+}
+#FirstCourseText, #SecondCourseText, #ThirdCourseText, #FourthCourseText {
+    position: absolute;
+    width: 62px;
+    height: 20px;
+    left: 30%;
+    top: 10%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+
+    text-align: center;
+
+    color: #005079;
+}
+.Barrier {
+    position: absolute;
+    width: 1251px;
+    height: 860px;
+    left: 626px;
+    top: 18px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 3.88px 3.88px rgba(0, 0, 0, 0.25);
+    border-radius: 29.08px;
+}
+.CourseList {
+    position: absolute;
+    width: 488px;
+    height: 860px;
+    left: 120px;
+    top: 18px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 3.87692px 3.87692px rgba(0, 0, 0, 0.25);
+    border-radius: 29.0769px;
+}
+#Develop {
+    position: absolute;
+    width: 249px;
+    height: 64.72px;
+    left: 595px;
+    top: 510px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.6751px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #9EB0BA;
+}
+#cat {
+    position: absolute;
+    width: 313px;
+    height: 242.36px;
+    left: 550px;
+    top: 300px;
+}
+#background {
+    position: fixed;
+    display: flex;
+    top: 0%;
+    left: 0%;
 }

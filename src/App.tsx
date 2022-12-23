@@ -1,8 +1,6 @@
-import React from 'react'
-import Timetable from './pages/Timetable'
-import Marks from './pages/Marks'
-import Home from './pages/Home'
-import Mark_teacher from './pages/Mark_teacher'
+import Timetable from './components/Timetable'
+import Marks from './components/Marks'
+import Home from './components/Home'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function App() {
@@ -13,7 +11,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/timetable" element={<Timetable/>} />
             <Route path="/marks" element={<Marks />} />
-            <Route path="/marks_teacher" element={<Mark_teacher />} />
         </Routes>
     </Router>
     </div>

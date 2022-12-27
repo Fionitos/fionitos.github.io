@@ -1,0 +1,255 @@
+{
+  "group_name": "101",
+  "days": [
+    {
+      "dayName": "Понедельник",
+      "subjects": [
+        {
+          "subject_number": 1,
+          "subject": "-",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 2,
+          "subject": "МДК 01.01",
+          "subject_room": "131"
+        },
+        {
+          "subject_number": 3,
+          "subject": "Химия",
+          "subject_room": "411"
+        },
+        {
+          "subject_number": 4,
+          "subject": "Физика",
+          "subject_room": "402"
+        },
+        {
+          "subject_number": 5,
+          "subject": "Слесарное дело",
+          "subject_room": "319"
+        },
+        {
+          "subject_number": 6,
+          "subject": "Основы гидравлики",
+          "subject_room": "131"
+        },
+        {
+          "subject_number": 7,
+          "subject": "Физ-ра",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 8,
+          "subject": "Математика",
+          "subject_room": "133"
+        },
+        {
+          "subject_number": 9,
+          "subject": "-",
+          "subject_room": "-"
+        }
+      ]
+    },
+    {
+      "dayName": "Вторник",
+      "subjects": [
+        {
+          "subject_number": 1,
+          "subject": "-",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 2,
+          "subject": "Учебная практика",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 3,
+          "subject": "Учебная практика",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 4,
+          "subject": "Учебная практика",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 5,
+          "subject": "Учебная практика",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 6,
+          "subject": "Учебная практика",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 7,
+          "subject": "Учебная практика",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 8,
+          "subject": "-",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 9,
+          "subject": "-",
+          "subject_room": "-"
+        }
+      ]
+    },
+    {
+      "dayName": "Среда",
+      "subjects": [
+        {
+          "subject_number": 1,
+          "subject": "Физика",
+          "subject_room": "402"
+        },
+        {
+          "subject_number": 2,
+          "subject": "Математика",
+          "subject_room": "133"
+        },
+        {
+          "subject_number": 3,
+          "subject": "ОБЖ",
+          "subject_room": "312"
+        },
+        {
+          "subject_number": 4,
+          "subject": "Инф. и ИКТ",
+          "subject_room": "408"
+        },
+        {
+          "subject_number": 5,
+          "subject": "Черчение",
+          "subject_room": "319"
+        },
+        {
+          "subject_number": 6,
+          "subject": "Математика",
+          "subject_room": "133"
+        },
+        {
+          "subject_number": 7,
+          "subject": "Химия",
+          "subject_room": "411"
+        },
+        {
+          "subject_number": 8,
+          "subject": "Основы гидравлики",
+          "subject_room": "131"
+        },
+        {
+          "subject_number": 9,
+          "subject": "-",
+          "subject_room": "-"
+        }
+      ]
+    },
+    {
+      "dayName": "Четверг",
+      "subjects": [
+        {
+          "subject_number": 1,
+          "subject": "-",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 2,
+          "subject": "Физ-ра",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 3,
+          "subject": "Физ-ра",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 4,
+          "subject": "Основы права",
+          "subject_room": "315"
+        },
+        {
+          "subject_number": 5,
+          "subject": "Биология",
+          "subject_room": "418"
+        },
+        {
+          "subject_number": 6,
+          "subject": "Математика",
+          "subject_room": "133"
+        },
+        {
+          "subject_number": 7,
+          "subject": "Основы права",
+          "subject_room": "315"
+        },
+        {
+          "subject_number": 8,
+          "subject": "МДК 01.01",
+          "subject_room": "131"
+        },
+        {
+          "subject_number": 9,
+          "subject": "-",
+          "subject_room": "-"
+        }
+      ]
+    },
+    {
+      "dayName": "Пятница",
+      "subjects": [
+        {
+          "subject_number": 1,
+          "subject": "-",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 2,
+          "subject": "Русский язык",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 3,
+          "subject": "Электротехника",
+          "subject_room": "-"
+        },
+        {
+          "subject_number": 4,
+          "subject": "Основы права",
+          "subject_room": "315"
+        },
+        {
+          "subject_number": 5,
+          "subject": "Материаловедение",
+          "subject_room": "319"
+        },
+        {
+          "subject_number": 6,
+          "subject": "Биология",
+          "subject_room": "418"
+        },
+        {
+          "subject_number": 7,
+          "subject": "МДК 01.01",
+          "subject_room": "131"
+        },
+        {
+          "subject_number": 8,
+          "subject": "Основы гидравлики",
+          "subject_room": "131"
+        },
+        {
+          "subject_number": 9,
+          "subject": "Физ-ра",
+          "subject_room": "-"
+        }
+      ]
+    }
+  ]
+}

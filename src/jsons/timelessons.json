@@ -1,0 +1,40 @@
+{
+  "lesson_calls": [
+    {
+      "lesson_number": 1,
+      "time_call": "8:05-8:50"
+    },
+    {
+      "lesson_number": 2,
+      "time_call": "9:00-9:45"
+    },
+    {
+      "lesson_number": 3,
+      "time_call": "9:55-10:40"
+    },
+    {
+      "lesson_number": 4,
+      "time_call": "11:00-11:45"
+    },
+    {
+      "lesson_number": 5,
+      "time_call": "12:05-12:50"
+    },
+    {
+      "lesson_number": 6,
+      "time_call": "13:10-13:55"
+    },
+    {
+      "lesson_number": 7,
+      "time_call": "14:05-14:50"
+    },
+    {
+      "lesson_number": 8,
+      "time_call": "15:00-15:45"
+    },
+    {
+      "lesson_number": 9,
+      "time_call": "15:55-16:40"
+    }
+  ]
+}

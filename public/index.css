@@ -210,7 +210,7 @@ body {
     background: #FFFFFF;
     border-radius: 30px;
 }
-.GroupText {
+.GroupText, .TimetableText {
     box-sizing: border-box;
 
     position: absolute;
@@ -224,7 +224,7 @@ body {
     box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.04);
     border-radius: 11px;
 }
-.SelectGroupText {
+.SelectGroupText, .TimetableSeeText {
     position: absolute;
     width: 224px;
     height: 26px;
@@ -301,9 +301,56 @@ body {
     box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.05);
     border-radius: 22.7817px;
 }
-.FirstCourseText, .SecondCourseText, .ThirdCourseText, .FourthCourseText {
+.SubjectList {
     box-sizing: border-box;
 
+    position: relative;
+    width: 442px;
+    height: 108px;
+    left: 25px;
+    top: 10%;
+
+    background: #FFFFFF;
+    border: 1.18426px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.05);
+    border-radius: 22.7817px;
+}
+.SubjectNumber {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 55px;
+    height: 108px;
+    padding-left: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 67px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #40BDFF;
+
+    border-right: 1.7764px solid rgba(115, 115, 116, 0.18);
+    border-radius: 20.7246px 0px 0px 20.7246px;
+}
+.SubjectName {
+    position: absolute;
+    width: 319px;
+    height: 62px;
+    left: 15%;
+    top: 5%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+
+    color: #005079;
+}
+.FirstCourseText, .SecondCourseText, .ThirdCourseText, .FourthCourseText {
     position: absolute;
     width: 166px;
     height: 28px;
@@ -311,6 +358,7 @@ body {
     top: 10%;
 
     background: #FFFFFF;
+    box-sizing: border-box;
     border: 1.18426px solid rgba(0, 0, 0, 0.06);
     box-shadow: 0px 4.73706px 9.47412px rgba(0, 0, 0, 0.04);
     border-radius: 11px;
@@ -383,32 +431,28 @@ body {
     top: 0%;
     left: 0%;
 }
-.FirstCourseList {
-    position: absolute;
-    display: block;
-    margin-left: 10%;
-    width: 61px;
+.FirstCourseList, .SecondCourseList, .ThirdCourseList, .FourthCourseList {
+    float: left;
+    position: relative;
+    top: 34px;
+    left: -120px;
+	width: 61px;
     height: 33px;
-    left: 5%;
-    top: 160%;
-
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-    border-radius: 30px;
-}
-#FirstCourseListText {
-    position: absolute;
-    width: 37px;
-    height: 24px;
-    left: 10%;
-    top: 10%;
+    padding: 1px;
+	padding-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 7px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
+	color: #40BDFF;
+	text-align: center;
 
-    color: #40BDFF;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
 }

@@ -10,22 +10,28 @@ function Timetable() {
   const [SecondCourse, setSecondCourse] = useState(Array<String>());
   const [ThirdCourse, setThirdCourse] = useState(Array<String>());
   const [FourthCourse, setFourthCourse] = useState(Array<String>());
+  const [GroupSelect = [], setGroupSelect] = useState(Array<any>());
 
   useEffect(() => {
-    axios.get(`http://10.0.0.151:8000/api/get/raspisanie_group/Allgroup`).then(res =>{
-        try {
-            var groupsls = [];
-            for (var i in res.data) {
-                groupsls.push(res.data[i].GroupName);
+    axios.all([
+        axios.get(`http://10.0.0.151:8000/api/get/raspisanie_group/Allgroup`).then(res =>{
+            try {
+                var groupsls = [];
+                for (var i in res.data) {
+                    groupsls.push(res.data[i].GroupName);
+                }
+                setFirstCourse(groupsls.filter(num => ['1'].includes(num.toString()[0])))
+                setSecondCourse(groupsls.filter(num => ['2'].includes(num.toString()[0])))
+                setThirdCourse(groupsls.filter(num => ['3'].includes(num.toString()[0])))
+                setFourthCourse(groupsls.filter(num => ['4'].includes(num.toString()[0])))
+            } catch (e) {
+                console.log('Некорректный JSON: '+e);
             }
-            setFirstCourse(groupsls.filter(num => ['1'].includes(num.toString()[0])))
-            setSecondCourse(groupsls.filter(num => ['2'].includes(num.toString()[0])))
-            setThirdCourse(groupsls.filter(num => ['3'].includes(num.toString()[0])))
-            setFourthCourse(groupsls.filter(num => ['4'].includes(num.toString()[0])))
-        } catch (e) {
-            console.log('Некорректный JSON: '+e);
-        }
+        }),
+        axios.get(`http://10.0.0.151:8000/api/get/raspisanie_group/id/group/101`).then(res =>{
+            setGroupSelect(res.data.days[0].subjects)
     })
+    ])
   }, [])
 
   return (
@@ -35,7 +41,25 @@ function Timetable() {
         <div className="Days"></div>
         <div className="Group"></div>
         <div className="CourseList">
-            <div className="GroupText"> 
+
+            <div className="TimetableText"> 
+                <a className="TimetableSeeText">Расписание</a>
+            </div>
+            {GroupSelect.map((val, key) => {
+                        return (
+                        <div key={key}>
+                            <div className='SubjectList'>
+                                <div className="SubjectNumber">{val.subject_number}</div>
+                                <div className="SubjectName">{val.subject === "-" ? 'СКИП' : val.subject}</div>
+                            </div>
+                        </div>
+                        )
+                    })}
+
+
+
+
+            {/* <div className="GroupText"> 
                 <a className="SelectGroupText">Выберите группу</a>
             </div>
             <div className="FirstCourse">
@@ -44,8 +68,8 @@ function Timetable() {
                     {FirstCourse.map((val, key) => {
                         return (
                         <div key={key}>
-                            <div className='FirstCourseList'>
-                                <a id="FirstCourseListText">{val}</a>
+                            <div className="gg">
+                                <span className='FirstCourseList'>{val}</span>
                             </div>
                         </div>
                         )
@@ -58,9 +82,7 @@ function Timetable() {
                     {SecondCourse.map((val, key) => {
                         return (
                         <div key={key}>
-                            <div className='SecondCourseList'>
-                                <a id="SecondCourseListText">{val}</a>
-                            </div>
+                            <div className='SecondCourseList'>{val}</div>
                         </div>
                         )
                     })}
@@ -72,9 +94,7 @@ function Timetable() {
                     {ThirdCourse.map((val, key) => {
                         return (
                         <div key={key}>
-                            <div className='ThirdCourseList'>
-                                <a id="ThirdCourseListText">{val}</a>
-                            </div>
+                            <div className='ThirdCourseList'>{val}</div>
                         </div>
                         )
                     })}
@@ -86,14 +106,12 @@ function Timetable() {
                     {FourthCourse.map((val, key) => {
                         return (
                         <div key={key}>
-                            <div className='FourthCourseList'>
-                                <a id="FourthCourseListText">{val}</a>
-                            </div>
+                            <div className='FourthCourseList'>{val}</div>
                         </div>
                         )
                     })}
                 </div>
-            </div>
+            </div> */}
         </div>
         <div className="Barrier">
             <img id="cat" src={require('../img/cat.png')} />
